@@ -37,6 +37,59 @@ header{
 	text-align: center;
 	margin: 0;
 	color:#fff;
+	
+	
+	@media only screen and (max-width: 479px){ /*for smartphone*/
+
+	#gallery li:nth-child(4n){
+		clear: none;
+	}
+	#gallery li:nth-child(3n){
+		clear: left;
+	}
+	
+}
+
+@media only screen and (min-width: 480px){ /*for smartphone*/
+
+	#primary{
+		float: left;
+		width: 50%;
+				
+	}
+	#secondary{
+		float: right;
+		width: 40%;
+	}
+	#gallery li{
+		width: 28.3333%;
+	}
+	#gallery li:nth-child(4n){
+		clear: left;
+	}
+	.profile-picture{
+		float: left;
+		margin: 0 50px 0 0;
+	}
+}
+@media screen and (min-width: 660px){ /*for tablet*/
+	
+	nav{
+		float: right;
+		background: none;
+		text-align: right;
+		margin-right: 5%;
+		width: 45%;
+		font-size: 1.125em;
+	}
+	nav li{
+		margin-right: 0;
+	}
+	#logo{
+		float: left;
+		text-align: left;
+		margin-left: 5%;
+		width: 45%;
 }
 h1{
 	font-family: 'Changa One', sans-serif;
